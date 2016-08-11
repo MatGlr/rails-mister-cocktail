@@ -1,7 +1,7 @@
 <%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :picture %>
-  <%= f.text_field :picture %>
-  <%= f.submit %>
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+  <p><%= f.label :picture %>
+  <%= f.text_area :picture %></p>
+  <p><%= f.submit %></p>
 <% end %>

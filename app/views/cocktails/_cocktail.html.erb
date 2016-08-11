@@ -7,11 +7,11 @@
         <div class="card-description">
           <%= link_to "Show", cocktail_path(cocktail), :class=>"btn btn-primary" %>
           <%= link_to "Update", edit_cocktail_path(cocktail), :class=>"btn btn-success" %>
-          <%= link_to "Delete", cocktail_path(cocktail),
+          <%= link_to "Del", cocktail_path(cocktail),
           method: :delete,
           :class=>"btn btn-warning",
           data: { confirm: "Are you sure?" } %>
+          <%= link_to "Ingredients", new_cocktail_dose_path(cocktail), :class=>"btn btn-danger" %>
         </div>
       </div>
     </div>
-

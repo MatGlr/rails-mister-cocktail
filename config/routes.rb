@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :cocktails
-  resources :ingredients
-  resources :doses
-
+  resources :cocktails do
+    resources :doses
+  end
 end
 
 
