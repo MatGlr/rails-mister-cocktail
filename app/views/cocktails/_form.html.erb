@@ -1,9 +1,9 @@
 <div class="formfor">
-<%= form_for(@cocktail) do |f| %>
-  <p><%= f.label :name %>
-  <%= f.text_field :name %></p>
-  <p><%= f.label :picture %>
-  <%= f.text_area :picture %></p>
-  <p><%= f.submit %></p>
+<%= simple_form_for(@cocktail) do |f| %>
+  <p><%= f.input :name %></p>
+  <%= f.input :picture %>
+  <%= f.input :picture_cache, as: :hidden %>
+  <%= f.submit %>
 <% end %>
 </div>
+

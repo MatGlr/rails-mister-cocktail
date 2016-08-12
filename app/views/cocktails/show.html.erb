@@ -5,6 +5,9 @@
   <br>
 <h3> Ingrédients </h3>
 
+<%= image_tag @cocktail.picture.url(:bright_face) %>
+
+
   <% @cocktail.doses.each do |dose| %>
   <%= dose.description %>
   <% end %>
